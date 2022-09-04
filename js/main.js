@@ -73,7 +73,15 @@ function storeFormData() {
 		message: form.message.value
 	};
 	// Do something with user data
-	console.log(user);
+	Email.send({
+		Host: 'smtp.gmail.com',
+		Username: 'tunjibamise94@gmail.com',
+		Password: '@94Oluwabamise',
+		To: 'tunjibamise94@gmail.com',
+		From: user.email,
+		Subject: 'New Contact Form Enquiry',
+		Body: user
+	}).then((message) => alert(`thank you for contacting Oluwabamise`));
 }
 
 // form eventlistener
@@ -88,6 +96,8 @@ function processFormData(e) {
 	// submit data if valid
 	if (isValid) {
 		storeFormData();
+		form.reset();
 	}
-}
 
+	form.reset();
+}

@@ -2,10 +2,41 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oluwabamise Olatunji</title>
+  <meta http-equiv="content-language" content="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content=" portfolio, frontend, javascript, developer, WordPress">
+  <meta name="author" content="Oluwabamise Olatunji">
+  <meta name="publisher" content="Oluwabamise Olatunji">
+  <meta name="copyright" content="Oluwabamise Olatunji">
+  <meta name="description"
+    content="Oluwabamise Olatunji is a Frontend Developer and JavaScript Enthusiast based in Lagos, Nigeria focused on creating responsive and interactive web applications">
+  <meta name="audience" content="Everyone">
+  <meta name="robots" content="index, follow">
+
+  <!-- twitter cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Oluwabamise Olatunji | Front End Developer" />
+  <meta name="twitter:description"
+    content="Oluwabamise Olatunji is a Frontend Developer and JavaScript Enthusiast based in Lagos, Nigeria focused on crafting responsive and interactive web applications" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Analog-ng/Analog-ng/main/myself.png" />
+
+  <!-- description -->
+  <meta property="og:title" content="Oluwabamise Olatunji | Front End Web Developer" />
+  <meta property="og:description"
+    content="Oluwabamise Olatunji is a Frontend Developer and JavaScript Enthusiast based in Lagos, Nigeria focused on crafting responsive and interactive web applications" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Analog-ng/Analog-ng/main/myself.png" />
+  <meta property="og:url" content="https://tunjibamise.tech" />
+  <meta property="og:type" content="website" />
+  <title>Oluwabamise Olatunji: FrontEnd Developer | UX Engineer </title>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+<link rel="manifest" href="./img/favicon/site.webmanifest">
+
+  <!--style links -->
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/skills.css" />
 
@@ -64,7 +95,8 @@
         <!-- mobile menu -->
         <div class="md:hidden">
           <div id="menu"
-            class="absolute flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center left-6 right-6 space-y-6 drop-shadow-md">
+            class="absolute flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center
+            left-6 right-6 space-y-6 drop-shadow-md z-10">
             <a href="/" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
                 class="mr-[1px] uil uil-house-user"></i>Home </a>
             <a href="#meet-me" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
@@ -111,7 +143,7 @@
         </div>
       </div>
       <!-- hero image -->
-      <div class="mb-8 md:w-1/2">
+      <div class="mb-8 md:w-1/2" data-aos="fade-left" data-aos-delay="1000">
         <img src="./img/myhero_img.svg" alt="Hero-img" />
       </div>
     </div>
@@ -204,7 +236,7 @@
       <!-- about me -->
       <div class="w-full flex flex-col md:flex-row item-center md:w-3/5">
         <div class="px-6 py-6 md:px-0 md:py-0" data-aos="fade-up">
-          <div class="font-bold text-[22px] text-black my-4">I'm Oluwabamise Olatunji, a <span
+          <div class="font-bold text-[20px] md:text-[24px] text-black my-4">I'm Oluwabamise Olatunji, a <span
               class="typing text-firstColor"></span></div>
           <p class="text-gray-700 mb-1">
             Front-End Developer and JavaScript enthusiast located in Nigeria. I have serious passion for UI effects,
@@ -263,16 +295,14 @@
                 Website Design
               </h3>
               <a href="#project">
-                <button
-                  class="text-firstColor text-sm border-firstColor font-semibold py-2 px-4 md:py-3 md:px-7 mr-1 inline-block
+                <button class="text-firstColor text-sm border-firstColor font-semibold py-2 px-4 md:py-3 md:px-7 mr-1 inline-block
                   rounded-md border hover:bg-firstColor hover:border-firstColor hover:text-white transition duration-500
                   ease-in-out">
                   <i class="mr-[2px] uil uil-globe"></i> Website
                 </button>
               </a>
               <a href="#project">
-                <button
-                  class="text-firstColor text-sm border-firstColor font-semibold py-2 px-4 md:py-3 md:px-7 inline-block
+                <button class="text-firstColor text-sm border-firstColor font-semibold py-2 px-4 md:py-3 md:px-7 inline-block
                   rounded-md border hover:bg-firstColor hover:border-firstColor hover:text-white transition duration-500
                   ease-in-out">
                   <i class="mr-[2px] uil uil-github"></i> Github
@@ -388,16 +418,18 @@
           <div class="w-full lg:w-1/2 px-3">
             <div class="flex lg:justify-end">
               <a href="#project">
-                <button
-                  class="px-3 py-1 mr-1 md:mr-3 md:py-4 md:px-6 bg-textColor text-firstColor hover:bg-firstColor
+                <button class="md:flex px-3 py-2 mr-2 md:mr-3 md:py-4 md:px-6 bg-textColor text-firstColor hover:bg-firstColor
                   hover:text-textColor
-                  outline hover:outline-1 rounded-md"><i
-                    class="mr-[1px] uil uil-eye"></i>Get a Quote</button>
+                  outline hover:outline-1 rounded-md">
+                  <i class="hidden md:block mr-1 uil uil-eye"></i>
+                  Get a Quote</button>
               </a>
               <a href="/pdf/_Oluwabamise_olatunji_cv.pdf">
                 <button
-                  class="px-3 py-1 md:mr-3 md:py-4 md:px-6 hover:bg-textColor hover:text-firstColor outline-1 outline rounded-md"><i
-                    class="mr-[1px] uil uil-file-alt"></i>Free site review</button>
+                  class="md:flex px-3 py-2 md:mr-3 md:py-4 md:px-6 hover:bg-textColor hover:text-firstColor outline-1
+                  outline rounded-md">
+                  <i class="hidden md:block mr-1 uil uil-file-alt"></i>
+                    Free site review</button>
               </a>
             </div>
           </div>
@@ -446,12 +478,10 @@
 
         <div class="flex flex-col md:flex-row item-center mx-auto">
           <!-- service card -->
-          <div id="card"
-            class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
+          <div id="card" class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
             hover:text-white shadow-lg rounded-lg border border-b-firstColor border-b-4 a3h transition duration-500
             ease-in-out" data-aos="fade-up" data-aos-delay="200">
-            <div
-              class="icon inline-block rounded-full bg-firstColor group-hover:text-firstColor group-hover:bg-white
+            <div class="icon inline-block rounded-full bg-firstColor group-hover:text-firstColor group-hover:bg-white
               text-white p-4 shadow-lg">
               <svg width="35" height="33" viewBox="0 0 35 33"
                 class="text-white fill-current group-hover:text-firstColor">
@@ -465,8 +495,7 @@
           </div>
 
           <!-- service card 2 -->
-          <div id="card"
-            class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
+          <div id="card" class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
             hover:text-white shadow-lg rounded-lg border border-b-firstColor border-b-4 a3h transition duration-500
             ease-in-out" data-aos="fade-up" data-aos-delay="400">
             <div
@@ -483,8 +512,7 @@
           </div>
 
           <!-- service card 3 -->
-          <div id="card"
-            class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
+          <div id="card" class="group mr-8 my-8 px-8 py-10 max-w-sm text-start bg-white hover:bg-firstColor fill-current
             hover:text-white rounded-lg shadow-lg border border-b-firstColor border-b-4 a3h transition duration-500
             ease-in-out" data-aos="fade-up" data-aos-delay="600">
             <div
@@ -542,20 +570,19 @@
           </p>
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-4">
-              <img class="w-7 h-7 rounded-full" src="/img/myself.png" alt="oluwabamise img" />
+              <img class="w-7 h-7 rounded-full" src="./img/myself.png" alt="oluwabamise img" />
               <span class="font-medium text-darkColor">
                 Oluwabamise
               </span>
             </div>
             <a href="https://analog.hashnode.dev/understanding-the-this-keyword-in-javascript" target="_blank"
               class="inline-flex items-center font-medium text-darkColor hover:underline">
-              Read  <span class="hidden md:block ml-1"> more </span> <i class="uil uil-arrow-right ml-1"></i>
+              Read <span class="hidden md:block ml-1"> more </span> <i class="uil uil-arrow-right ml-1"></i>
             </a>
           </div>
         </article>
 
-        <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md" data-aos="fade-up"
-         >
+        <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md" data-aos="fade-up">
           <div class="mb-2">
             <a href="#">
               <img class="rounded-t-lg" src="./img/blogs/thiskeyword.svg" alt="" />
@@ -582,9 +609,9 @@
           </p>
           <div class="flex justify-between items-center">
             <div class="flex items-center space-x-4">
-              <img class="w-7 h-7 rounded-full" src="/img/myself.png" alt="oluwabamise img" />
+              <img class="w-7 h-7 rounded-full" src="./img/myself.png" alt="oluwabamise img" />
               <span class="font-medium text-darkColor">
-                Oluwabamise 
+                Oluwabamise
               </span>
             </div>
             <a href="https://analog.hashnode.dev/understanding-the-this-keyword-in-javascript" target="_blank"
@@ -609,7 +636,7 @@
     <!-- end section heading -->
     <div class="container flex flex-col mx-auto items-center md:flex-row">
       <div class="flex flex-wrap w-full px-6">
-        <div class="w-full md:w-1/2 my-6 bg-firstColor flex justify-center items-center shadow-md">
+        <div class="w-full md:w-1/2 my-6 bg-firstColor flex justify-center items-center shadow-lg data-aos="zoom-in">
           <div id="contact" class="mb-12 lg:mb-0 sm:pt-14">
             <div class="flex mb-8 w-full">
               <div
@@ -662,8 +689,8 @@
           </div>
         </div>
 
-        <div class="w-full md:w-1/2">
-          <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+        <div class="w-full md:w-1/2 shadow-lg">
+          <div class="bg-white relative rounded-lg p-8 sm:p-12 ">
             <form id="form" action="https://formspree.io/f/xwkzpjlg" method="POST">
               <div class="mb-6">
                 <input id="name" name="name" type="text" placeholder="Your Full Name" minlength="4" maxlength="80"
@@ -697,22 +724,21 @@
   <!-- Contact Section End -->
 
   <!-- floating social icons -->
-
   <a href="https://api.whatsapp.com/send?phone=+2347036877727" target="_blank"
-    class="hover:animate-bounce transition duration-500 ease-in-out shadow-lg">
+    class=" transition duration-500 ease-in-out">
     <button
-      class="inline-flex items-center justify-center bg-green-600 text-white font-medium uppercase rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 left-3"
+      class="animate-bounce inline-flex items-center justify-center bg-green-600 text-white font-medium uppercase
+      rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none
+      focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 left-3"
       id="whatsapp-icon">
       <i class="uil uil-whatsapp text-2xl"></i>
     </button>
   </a>
 
   <!-- Back to top button -->
-  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-    class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md
+  <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md
     hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-    active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-3"
-    id="btn-back-to-top">
+    active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-3" id="btn-back-to-top">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor"
@@ -754,13 +780,15 @@
             </script>
           </span>
           Oluwabamise | All Rights Reserved
-        </div> 
+        </div>
       </div>
     </div>
   </footer>
   <!--end of footer -->
 
-  <!-- ==================================JS scripts ==============================-->
+  <!-- ====================JS scripts ===================-->
+  <!-- smtp.js for form submission -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- typed js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <!-- aos -->
