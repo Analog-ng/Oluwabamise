@@ -742,6 +742,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .mr-\[2px\]{
   margin-right: 2px;
 }
@@ -752,10 +756,6 @@ video {
 
 .mb-6{
   margin-bottom: 1.5rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .-mb-8{
@@ -770,8 +770,8 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
+.ml-1{
+  margin-left: 0.25rem;
 }
 
 .mr-6{
@@ -810,12 +810,12 @@ video {
   height: 1.75rem;
 }
 
-.h-4{
-  height: 1rem;
-}
-
 .h-\[60px\]{
   height: 60px;
+}
+
+.h-4{
+  height: 1rem;
 }
 
 .h-8{
@@ -1068,11 +1068,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1083,9 +1078,9 @@ video {
   padding-right: 2rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-5{
@@ -1121,11 +1116,6 @@ video {
 .px-\[14px\]{
   padding-left: 14px;
   padding-right: 14px;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .pb-12{
@@ -1252,6 +1242,16 @@ video {
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-gray-100{
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-gray-200{
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -1525,6 +1525,7 @@ section > .social-media {
 
   #contact{
     padding-top: 50px;
+    padding-left: 15px;
   }
 }
 
@@ -1821,16 +1822,6 @@ section > .social-media {
     padding-bottom: 0px;
   }
 
-  .md\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .md\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -1839,6 +1830,16 @@ section > .social-media {
   .md\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:text-left{
