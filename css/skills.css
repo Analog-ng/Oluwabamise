@@ -1,4 +1,4 @@
-/* Make images easier to work with */ 
+/* Make images easier to work with */
 img,
 picture {
 	max-width: 100%;
@@ -40,8 +40,8 @@ picture {
 	font-family: system-ui;
 	display: grid;
 	min-height: 80vh;
-    width:501px;
-    height:501px;
+	width: 501px;
+	height: 501px;
 	place-content: center;
 	overflow: hidden;
 }
@@ -93,8 +93,8 @@ picture {
 	place-items: center;
 }
 
-li > .small-logo > img{
-	width: 150%!important ;
+li > .small-logo > img {
+	width: 150% !important ;
 }
 
 .orbit li:hover {
@@ -151,7 +151,7 @@ li > .small-logo > img{
 }
 .orbit li > p {
 	background: var(--text-bg);
-    font-size: small;
+	font-size: small;
 	transition: opacity 500ms;
 	opacity: 0;
 }
@@ -177,7 +177,6 @@ li > .small-logo > img{
 	--icon-bg: var(--orange-light);
 	--text-bg: var(--orange-dark);
 	transform: rotate(108deg) translate(150px) rotate(-108deg);
-
 }
 .orbit li:nth-child(5) {
 	--icon-bg: var(--yellow-light);
@@ -222,6 +221,85 @@ li > .small-logo > img{
 }
 @keyframes throb {
 	100% {
-		scale: 1.10;
+		scale: 1.1;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.orbit {
+		--size: 7rem;
+		--speed: 120s;
+	}
+
+	.orbit .center-image {
+		width: var(--size);
+		position: relative;
+		z-index: 10;
+	}
+	.orbit .center-image img {
+		position: absolute;
+		transition: opacity 500ms;
+	}
+	#skills {
+		font-family: system-ui;
+		display: grid;
+		min-height: 60vh;
+		width: 600px;
+		height: 600px;
+		place-content: center;
+		overflow: hidden;
+	}
+
+	.orbit li {
+		--icon-bg: pink;
+		--text-bg: blue;
+		position: absolute;
+		width: 3.5rem;
+		aspect-ratio: 1/1;
+		border-radius: 50%;
+		font-weight: 500;
+		color: var(--white-light);
+		text-align: center;
+		line-height: 1;
+		display: grid;
+		place-items: center;
+	}
+	.orbit li > div > img {
+		width: 2rem;
+	}
+
+	li > .small-logo > img {
+		width: 120% !important ;
+	}
+
+	.orbit li:nth-child(1) {
+		transform: rotate(0deg) translate(120px);
+	}
+	.orbit li:nth-child(2) {
+		transform: rotate(36deg) translate(120px) rotate(-36deg);
+	}
+	.orbit li:nth-child(3) {
+		transform: rotate(72deg) translate(120px) rotate(-72deg);
+	}
+	.orbit li:nth-child(4) {
+		transform: rotate(108deg) translate(120px) rotate(-108deg);
+	}
+	.orbit li:nth-child(5) {
+		transform: rotate(144deg) translate(120px) rotate(-144deg);
+	}
+	.orbit li:nth-child(6) {
+		transform: rotate(180deg) translate(120px) rotate(-180deg);
+	}
+	.orbit li:nth-child(7) {
+		transform: rotate(216deg) translate(120px) rotate(-216deg);
+	}
+	.orbit li:nth-child(8) {
+		transform: rotate(252deg) translate(120px) rotate(-252deg);
+	}
+	.orbit li:nth-child(9) {
+		transform: rotate(288deg) translate(120px) rotate(-288deg);
+	}
+	.orbit li:nth-child(10) {
+		transform: rotate(324deg) translate(120px) rotate(-324deg);
 	}
 }

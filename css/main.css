@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@400;700&family=Poppins:ital,wght@0,500;0,700;0,900;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lato:wght@400;700&family=Poppins:ital,wght@0,500;0,700;0,900;1,400&display=swap');
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -682,8 +682,8 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mr-\[3px\]{
-  margin-right: 3px;
+.mr-\[1px\]{
+  margin-right: 1px;
 }
 
 .mt-10{
@@ -712,10 +712,6 @@ video {
 
 .-mb-14{
   margin-bottom: -3.5rem;
-}
-
-.-ml-14{
-  margin-left: -3.5rem;
 }
 
 .mb-1{
@@ -758,6 +754,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .-mb-8{
   margin-bottom: -2rem;
 }
@@ -768,10 +768,6 @@ video {
 
 .mb-5{
   margin-bottom: 1.25rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .ml-2{
@@ -1304,15 +1300,8 @@ video {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-}
-
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
@@ -1321,36 +1310,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 p,
 a,
 i,
 button {
-  font-family: "Inter", sans-serif;
-  line-height: 140%;
+  font-family: 'Inter', sans-serif;
 }
 
 button {
   cursor: pointer;
-}
-
-/* home section */
-
-#particles-js {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 0;
-}
-
-#hero-btn {
-  z-index: 2;
-}
-
-#menu {
-  z-index: 3;
 }
 
 section > .social-media {
@@ -1407,7 +1378,7 @@ section > .social-media {
 }
 
 .secondary-title::after {
-  content: "";
+  content: '';
   margin-top: 4px;
   margin-bottom: 4px;
   display: block;
@@ -1506,7 +1477,8 @@ section > .social-media {
 
 .a3h {
   --tw-shadow: 0px 11px 41px -11px rgba(9, 14, 52, 0.1);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 /* contact me section */
@@ -1537,8 +1509,17 @@ section > .social-media {
 
 @media only screen and (max-width: 768px) {
   #hero-text h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+  }
+
+  #skills{
+    margin-top: -60px;
+    margin-bottom: -150px;
+  }
+
+  #contact{
+    padding-top: 50px;
   }
 }
 
@@ -1753,11 +1734,6 @@ section > .social-media {
     padding-top: 3.5rem;
   }
 
-  .sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-\[38px\]{
     font-size: 38px;
   }
@@ -1774,6 +1750,10 @@ section > .social-media {
 
   .md\:-mt-\[150px\]{
     margin-top: -150px;
+  }
+
+  .md\:mr-3{
+    margin-right: 0.75rem;
   }
 
   .md\:block{
@@ -1834,6 +1814,26 @@ section > .social-media {
   .md\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .md\:text-left{
