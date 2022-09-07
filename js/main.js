@@ -10,13 +10,19 @@ btn.addEventListener('click', () => {
 
 // typing animation script
 var typed = new Typed('.typing', {
-	strings: ['Developer', 'Freelancer', 'Designer', 'Blogger'],
+	strings: [
+		'Web Developer',
+		'Freelancer',
+		'Front-End Engineer',
+		'UX Designer',
+		'Tech Blogger'
+	],
 	typeSpeed: 100,
 	backSpeed: 60,
 	loop: true
 });
 
-// AOS intialisation
+// AOS initialization
 AOS.init({
 	delay: 200,
 	duration: 1500,
@@ -51,53 +57,3 @@ function backToTop() {
 	document.documentElement.scrollTop = 0;
 }
 
-// form validation
-const form = document.getElementById('form');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const phone = document.getElementById('phone');
-const message = document.getElementById('message');
-
-let isValid = false;
-
-function validateForm() {
-	// using contraint API
-	isValid = form.checkValidity();
-}
-
-function storeFormData() {
-	const user = {
-		name: form.name.value,
-		email: form.email.value,
-		phone: form.phone.value,
-		message: form.message.value
-	};
-	// Do something with user data
-	Email.send({
-		Host: 'smtp.gmail.com',
-		Username: 'tunjibamise94@gmail.com',
-		Password: '@94Oluwabamise',
-		To: 'tunjibamise94@gmail.com',
-		From: user.email,
-		Subject: 'New Contact Form Enquiry',
-		Body: user
-	}).then((message) => alert(`thank you for contacting Oluwabamise`));
-}
-
-// form eventlistener
-form.addEventListener('submit', processFormData);
-
-function processFormData(e) {
-	e.preventDefault();
-
-	// validate form
-	validateForm();
-
-	// submit data if valid
-	if (isValid) {
-		storeFormData();
-		form.reset();
-	}
-
-	form.reset();
-}
