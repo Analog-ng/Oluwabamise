@@ -32,9 +32,9 @@
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-<link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
 
   <!--style links -->
   <link rel="stylesheet" href="./css/main.css" />
@@ -51,7 +51,15 @@
 <body class="transition duration-500 ease-in-out text-white ">
 
   <!-- header -->
-  <section id="home" class="bg-firstColor pb-12 overflow-hidden">
+  <section id="home" class="relative bg-firstColor pb-12 overflow-hidden">
+
+    <!-- bg-designs -->
+    <div id="bg-wave">
+      <img id="bg-design" src="./img/bg_addons/circles.svg" alt="circle"
+        class="z-10 w-76 absolute right-0 bottom-16 md:right-36 md:top-24">
+    </div>
+    <!-- end of bg-designs -->
+
     <!-- navbar -->
     <nav class="container relative mx-auto p-6 ">
       <div class="flex item-center justify-between">
@@ -94,8 +102,7 @@
 
         <!-- mobile menu -->
         <div class="md:hidden">
-          <div id="menu"
-            class="absolute flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center
+          <div id="menu" class="absolute flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center
             left-6 right-6 space-y-6 drop-shadow-md z-10">
             <a href="/" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
                 class="mr-[1px] uil uil-house-user"></i>Home </a>
@@ -125,29 +132,31 @@
       <!-- hero text -->
       <div id="hero-text" class="flex flex-col mb-4 space-y-8 md:w-1/2 md:justify-center">
         <h1 class="max-w-md font-bold text-center md:text-4xl md:text-left" data-aos="fade-up">
-          I conceptualize, build and scale Internet platforms.
+          I conceptualize, <br> build and scale <br> Internet platforms.
         </h1>
 
         <!-- button -->
         <div id="hero-btn" class="flex justify-center md:justify-start mt-10 md:mt-0" data-aos="fade-right"
           data-aos-delay="1000">
           <a href="#project">
-            <button
-              class="px-6 py-2 mr-3 bg-textColor text-firstColor hover:bg-firstColor hover:text-textColor outline hover:outline-1 rounded-md"><i
-                class="mr-[1px] uil uil-eye"></i>My Works</button>
+            <button class="px-6 py-2 mr-3 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border
+              transition duration-500 ease-in-out"><i class="mr-[1px] uil uil-eye"></i>My Works</button>
           </a>
           <a href="/pdf/_Oluwabamise_olatunji_cv.pdf">
-            <button class="px-6 py-2 ml-3 hover:bg-textColor hover:text-firstColor outline-1 outline rounded-md"><i
+            <button
+              class="px-6 py-2 ml-3 rounded-md text-white bg-firstColor hover:bg-white hover:text-firstColor border transition duration-500 ease-in-out"><i
                 class="mr-[1px] uil uil-file-alt"></i>Resume</button>
           </a>
         </div>
       </div>
       <!-- hero image -->
-      <div class="mb-8 md:w-1/2" data-aos="fade-left" data-aos-delay="1000">
-        <img src="./img/myhero_img.svg" alt="Hero-img" />
+      <div class="mb-8 md:w-1/2 relative z-50" data-aos="fade-left" data-aos-delay="800">
+        <img src="./img/myhero_img.svg" alt="Hero-img" class="" />
       </div>
     </div>
     <!-- end hero section -->
+
+
   </section>
   <!-- end of header -->
 
@@ -161,7 +170,7 @@
 
     <div class="container flex flex-col items-center mx-auto gap-6 md:flex-row">
       <!-- my skills -->
-      <div id="skills" class="w-full md:w-2/5">
+      <div id="skills" class=" md:w-2/5">
         <div class="orbit">
           <div class="center-image">
             <img src="./img/skills/Myself1.svg" alt="" />
@@ -234,30 +243,41 @@
       </div>
 
       <!-- about me -->
-      <div class="w-full flex flex-col md:flex-row item-center md:w-3/5">
+      <div class="flex flex-col md:flex-row item-center md:w-3/5 bg-red">
         <div class="px-6 py-6 md:px-0 md:py-0" data-aos="fade-up">
-          <div class="font-bold text-[24px] md:text-[24px] text-black my-4">Hi I'm Oluwabamise Olatunji,
-            <br class="" /> a <span class="typing text-firstColor"></span></div>
-          <p class="text-gray-700 mb-3">
-            I create engaging Web Application for brands and startups by balancing the business needs and the user's needs. I have
-            serious passion for UI effects, animations and creating intuitive, dynamic and delightful user experiences. I combine human empathy, research and intelligent data to provide the highest level of satisfaction for brands and their users, over the years I have honed my skills at web development, technical writing,
+          <!-- <div class="font-bold text-[24px] md:text-[24px] text-black my-4">Hi I'm Oluwabamise Olatunji,
+            <br class="" /> a <span class="typing text-firstColor"></span></div> -->
+          <h4 class="text-firstColor">
+            Hey There 👋 I am
+          </h4>
+          <h2 class="font-bold text-[24px] md:text-[26px] text-black ">
+            Oluwabamise Olatunji
+          </h2>
+          <h3 class="text-black text-[18px] md:text-[18px] mb-1">
+            Professional <span class="typing text-firstColor"></span>
+          </h3>
+          <p class="text-gray-700 mb-2">
+            I create engaging Web Application for brands and startups by balancing the business needs and the user's
+            needs. I have
+            serious passion for UI effects, animations and creating intuitive, dynamic and delightful user experiences.
+            I combine human empathy, research and intelligent data to provide the highest level of satisfaction for
+            brands and their users, over the years I have honed my skills at web development, technical writing,
             product Research and SEO analytics.
           </p>
-          <p class="text-gray-700">I'm interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+          <p class="text-gray-700">I'm interested in the entire frontend spectrum and working on ambitious projects with
+            positive people.</p>
           <div class="flex">
             <div class="about_btn mt-6">
               <a href="">
-                <button
-                  class="py-2 px-3 md:py-3 md:px-6 mr-1 md:mr-3 text-sm font-semibold inline-block rounded-md border bg-firstColor
+                <button class="py-2 px-3 md:py-3 md:px-6 mr-1 md:mr-3 text-sm font-semibold inline-block rounded-md border bg-firstColor
                   text-white border-firstColor hover:bg-white hover:border-firstColor hover:text-firstColor transition
                   duration-500 ease-in-out">
                   <i class="mr-[2px] uil uil-outgoing-call"></i>Contact Me
                 </button>
               </a>
               <a href="/pdf/_Oluwabamise_olatunji_cv.pdf">
-                <button
-                  class="py-2 px-3 md:py-3 md:px-6 mr-1 md:mr-3 text-sm font-semibold inline-block rounded-md border
-                  text-firstColor text-sm border-firstColor
+                <button class="py-2 px-3 md:py-3 md:px-6 mr-1 md:mr-3 text-sm font-semibold inline-block rounded-md border
+                  text-firstColor border-firstColor
                   hover:bg-firstColor hover:border-firstColor hover:text-white transition duration-500
                   ease-in-out">
                   <i class="mr-[2px] uil uil-file-plus-alt"></i>Download CV
@@ -277,7 +297,7 @@
       <!-- section heading -->
       <div data-aos="fade-right">
         <h2 class="secondary-title">Portfolio</h2>
-        <p class="secondary-paragraph mb-10">A Selection Of projects I've Built</p>
+        <p class="secondary-paragraph mb-10">A Selection Of my recent works</p>
       </div>
 
       <div class="flex flex-wrap mt-5 mb-8 -mx-4">
@@ -420,18 +440,17 @@
           <div class="w-full lg:w-1/2 px-3">
             <div class="flex lg:justify-end">
               <a href="#project">
-                <button class="md:flex px-3 py-2 mr-2 md:mr-3 md:py-4 md:px-6 bg-textColor text-firstColor hover:bg-firstColor
-                  hover:text-textColor
-                  outline hover:outline-1 rounded-md">
+                <button class="md:flex px-3 py-2 mr-2 md:mr-3 md:py-4 md:px-6 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border
+              transition duration-500 ease-in-out">
                   <i class="hidden md:block mr-[2px] uil uil-mobile-android"></i>
                   Let’s talk</button>
               </a>
               <a href="/pdf/_Oluwabamise_olatunji_cv.pdf">
-                <button
-                  class="md:flex px-3 py-2 md:py-4 md:px-6 hover:bg-textColor hover:text-firstColor outline-1
-                  outline rounded-md">
+                <button class="md:flex px-3 py-2 md:py-4 md:px-6 rounded-md text-white bg-firstColor hover:bg-white
+                  hover:text-firstColor
+                  border transition duration-500 ease-in-out">
                   <i class="hidden md:block mr-[2px] uil uil-file-edit-alt"></i>
-                    Free Web Audit</button>
+                  Free Web Audit</button>
               </a>
             </div>
           </div>
@@ -492,8 +511,10 @@
               </svg>
             </div>
             <h5 class="my-3 text-xl font-semibold text-bodyColorDark group-hover:text-white">User Research</h5>
-            <p class="font-small text-black group-hover:text-white">User research focuses 
-            on  user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. It guarantees that you're creating an experience that's relevant to your targeted group.</p>
+            <p class="font-small text-black group-hover:text-white">User research focuses
+              on user behaviors, needs, and motivations through observation techniques, task analysis, and other
+              feedback methodologies. It guarantees that you're creating an experience that's relevant to your targeted
+              group.</p>
           </div>
 
           <!-- service card 2 -->
@@ -509,7 +530,9 @@
               </svg>
             </div>
             <h5 class="my-3 text-xl font-semibold text-bodyColorDark group-hover:text-white">Web Development</h5>
-            <p class="font-small text-black group-hover:text-white">You deserve to have a website that truly represents your brand, as well as showcasing your products and services in the best possible way, a website that is stress free, easy to manage and customer-generating.</p>
+            <p class="font-small text-black group-hover:text-white">You deserve to have a website that truly represents
+              your brand, as well as showcasing your products and services in the best possible way, a website that is
+              stress free, easy to manage and customer-generating.</p>
           </div>
 
           <!-- service card 3 -->
@@ -525,7 +548,9 @@
               </svg>
             </div>
             <h5 class="my-3 text-xl font-semibold text-bodyColorDark group-hover:text-white">SEO Consultancy</h5>
-            <p class="font-small text-black group-hover:text-white">Search engine optimisation is all about building your credibility and online authority. Thus, earning your business a more prominent position on search engines, merely having a website is no longer enough.</p>
+            <p class="font-small text-black group-hover:text-white">Search engine optimisation is all about building
+              your credibility and online authority. Thus, earning your business a more prominent position on search
+              engines, merely having a website is no longer enough.</p>
           </div>
         </div>
       </div>
@@ -633,12 +658,12 @@
     <!-- section heading -->
     <div class="container mx-auto px-6" data-aos="fade-right">
       <h2 class="secondary-title">Contact Me</h2>
-      <p class="secondary-paragraph">let's design something truly spectacular!</p>
+      <p class="secondary-paragraph">Have an Project in Mind? </p>
     </div>
     <!-- end section heading -->
     <div class="container flex flex-col mx-auto items-center md:flex-row">
       <div class="flex flex-wrap w-full px-6">
-        <div class="w-full md:w-1/2 my-6 bg-firstColor flex justify-center items-center shadow-lg data-aos="zoom-in">
+        <div class="w-full md:w-1/2 my-6 bg-firstColor flex justify-center items-center shadow-lg" data-aos=" zoom-in">
           <div id="contact" class="mb-12 lg:mb-0 sm:pt-14">
             <div class="flex mb-8 w-full">
               <div
@@ -693,7 +718,7 @@
 
         <div class="w-full md:w-1/2 shadow-lg">
           <div class="bg-white relative rounded-lg p-8 sm:p-12 ">
-            <form id="form" >
+            <form id="form">
               <div class="mb-6">
                 <input id="name" name="name" type="text" placeholder="Your Full Name" minlength="4" maxlength="80"
                   required
@@ -743,9 +768,9 @@
     <div
       class="fixed bottom-14 left-11 -mr-1 w-4 h-4 rounded-full bg-red-600 z-50 animate-ping transition duration-150 ease-in-out">
     </div>
-   
+
   </div>
-  
+
 
   <!-- Back to top button -->
   <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md
