@@ -13,7 +13,7 @@ var typed = new Typed('.typing', {
 	strings: [
 		'Web Developer',
 		'Freelancer',
-		'Front-End Engineer',
+		'FrontEnd Dev',
 		'UX Designer',
 		'Tech Blogger'
 	],

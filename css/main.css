@@ -593,20 +593,20 @@ video {
   position: relative;
 }
 
-.right-0{
-  right: 0px;
-}
-
-.bottom-16{
-  bottom: 4rem;
-}
-
 .left-6{
   left: 1.5rem;
 }
 
 .right-6{
   right: 1.5rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.bottom-\[7rem\]{
+  bottom: 7rem;
 }
 
 .top-0{
@@ -666,11 +666,6 @@ video {
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .-mx-4{
@@ -939,12 +934,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-y-0 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -1836,12 +1825,6 @@ section > .social-media {
     justify-content: center;
   }
 
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
   .md\:p-\[70px\]{
     padding: 70px;
   }
@@ -1883,10 +1866,6 @@ section > .social-media {
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-\[24px\]{
-    font-size: 24px;
   }
 
   .md\:text-\[26px\]{
