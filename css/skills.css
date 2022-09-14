@@ -251,10 +251,9 @@ li > .small-logo > img {
 		display: grid;
 		min-height: 60vh;
 		width: 100%;
-		height: 550px;
+		height: 60vh;
 		place-items: center;
 		overflow: hidden;
-		
 	}
 
 	.orbit li {
