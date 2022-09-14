@@ -47,8 +47,6 @@ picture {
 	font-family: system-ui;
 	display: grid;
 	min-height: 80vh;
-	width: 501px;
-	height: 501px;
 	place-content: center;
 	overflow: hidden;
 }
@@ -251,10 +249,10 @@ li > .small-logo > img {
 	#skills {
 		font-family: system-ui;
 		display: grid;
-		min-height: 60vh;
-		width: 600px;
-		height: 600px;
-		place-content: center;
+		margin-left: -6rem;
+		width: 100%;
+		height: 550px;
+		place-items: center;
 		overflow: hidden;
 	}
 
