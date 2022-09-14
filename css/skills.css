@@ -48,13 +48,12 @@ picture {
 	display: grid;
 	min-height: 80vh;
 	place-content: center;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .orbit {
 	--size: 8rem;
 	--speed: 120s;
-	overflow-x: hidden;
 }
 .orbit .center-image {
 	width: var(--size);
@@ -233,6 +232,10 @@ li > .small-logo > img {
 }
 
 @media only screen and (max-width: 768px) {
+	.orbit {
+		--size: 7rem;
+		--speed: 120s;
+	}
 
 	.orbit .center-image {
 		width: var(--size);
@@ -244,11 +247,14 @@ li > .small-logo > img {
 		transition: opacity 500ms;
 	}
 	#skills {
+		font-family: system-ui;
 		display: grid;
+		min-height: 60vh;
 		width: 100%;
 		height: 550px;
 		place-items: center;
 		overflow: hidden;
+		
 	}
 
 	.orbit li {
