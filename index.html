@@ -53,7 +53,7 @@
   <!-- header -->
   <section id="home" class="relative bg-firstColor pb-12">
     <!-- navbar -->
-    <nav class="container relative mx-auto p-6">
+    <nav class="container relative mx-auto p-6 z-50">
       <div class="flex item-center justify-between">
         <!-- Logo -->
         <div class="pt-2 text-2xl font-bold sm:w-2/3 md:w-1/4">
@@ -64,26 +64,26 @@
         <div class="hidden md:flex md:mt-3 space-x-8 text-small">
           <a href="#"
             class="hover:text-textColor text-small text-white hover:animate-bounce transition duration-500 ease-in-out">
-            <i class="mr-[1px] uil uil-house-user"></i>Home </a>
+            <i class="mr-[3px] uil uil-house-user"></i>Home </a>
           <a href="#meet-me"
             class="hover:text-textColor text-white text-small hover:animate-bounce transition duration-500 ease-in-out">
-            <i class="mr-[1px] uil uil-user-plus"></i>Meet me </a>
+            <i class="mr-[3px] uil uil-user-plus"></i>Meet me </a>
           <a href="#projects"
             class="hover:text-textColor text-white text-small hover:animate-bounce transition duration-500 ease-in-out">
-            <i class="mr-[1px] uil uil-briefcase-alt"></i>Projects </a>
+            <i class="mr-[3px] uil uil-briefcase-alt"></i>Projects </a>
           <a href="#services"
             class="hover:text-textColor text-white text-small text-small hover:animate-bounce transition duration-500 ease-in-out">
-            <i class="mr-[1px] uil uil-parcel"></i>Services </a>
+            <i class="mr-[3px] uil uil-parcel"></i>Services </a>
           <a href="#blog"
             class="hover:text-textColor text-small text-white hover:animate-bounce transition duration-500 ease-in-out">
-            <i class="mr-[1px] uil uil-book-reader"></i>Blogs </a>
+            <i class="mr-[3px] uil uil-book-reader"></i>Blogs </a>
         </div>
-        <!-- button -->
-        <a href="#contact">
-          <button
-            class="hidden md:block px-6 py-2 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border transition duration-500 ease-in-out"><i
-              class="mr-[1px] uil uil-message"></i>Hire Me</button>
-        </a>
+       <!-- button -->
+       <a href="#hire">
+         <button
+           class="hidden md:block px-6 py-2 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border transition duration-500 ease-in-out"><i
+             class="mr-[1px] uil uil-message"></i>Hire Me</button>
+       </a>
 
         <!-- mobile menu btn-->
         <button id="menu-btn" class="sm:w-1/3 block hamburger md:hidden focus:outline-none">
@@ -95,19 +95,19 @@
         <!-- mobile menu -->
         <div class="md:hidden">
           <div id="menu"
-            class="relative flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center left-6 right-6 space-y-6 drop-shadow-md z-50">
+            class="absolute flex-col hidden items-center self-end py-8 mt-10 bg-bodyColorLight sm:w-auto sm:self-center left-6 right-6 space-y-6 drop-shadow-md">
             <a href="#" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
-                class="mr-[1px] uil uil-house-user"></i>Home </a>
+                class="mr-[3px] uil uil-house-user"></i>Home </a>
             <a href="#meet-me" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
-                class="mr-[1px] uil uil-user-plus"></i>Meet me </a>
+                class="mr-[3px] uil uil-user-plus"></i>Meet me </a>
             <a href="#projects" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
-                class="mr-[1px] uil uil-briefcase-alt"></i>Projects </a>
+                class="mr-[3px] uil uil-briefcase-alt"></i>Projects </a>
             <a href="#services" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
-                class="mr-[1px] uil uil-parcel"></i>Services </a>
+                class="mr-[3px] uil uil-parcel"></i>Services </a>
             <a href="#blog" class="hover:animate-bounce transition duration-500 ease-in-out text-firstColor"> <i
-                class="mr-[1px] uil uil-book-reader"></i>Blogs </a>
+                class="mr-[3px] uil uil-book-reader"></i>Blogs </a>
             <!-- button -->
-            <a href="#contact">
+            <a href="#hire">
               <button
                 class="md:hidden px-6 py-2 rounded-md text-white bg-firstColor hover:bg-white hover:text-firstColor border border-firstColor transition duration-500 ease-in-out">
                 <i class="mr-[1px] uil uil-message"></i>Hire Me
@@ -130,14 +130,14 @@
         </h1>
 
         <!-- button -->
-        <div id="hero-btn" class="flex justify-center md:justify-start mt-10 md:mt-0 relative z-50"
+        <div id="hero-btn" class="flex justify-center md:justify-start mt-10 md:mt-0 relative z-[5]"
           data-aos="fade-right" data-aos-delay="1000">
-          <a href="#projects" class="relative z-30">
+          <a href="#projects" class="relative z-[5] ">
             <button
               class="px-6 py-2 mr-3 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border transition duration-500 ease-in-out"><i
                 class="mr-[1px] uil uil-eye"></i>My Works</button>
           </a>
-          <a href="./resume.html" class="relative z-30">
+          <a href="./resume.html" class="relative z-[5]">
             <button
               class="px-6 py-2 ml-3 rounded-md text-white bg-firstColor hover:bg-white hover:text-firstColor border transition duration-500 ease-in-out"><i
                 class="mr-[1px] uil uil-file-alt"></i>Resume</button>
@@ -154,7 +154,7 @@
     <!-- bg-designs -->
     <div id="bg-wave">
       <img id="bg-design" src="./img/bg_addons/circles.svg" alt="circle"
-        class="z-10 w-76 absolute right-0 bottom-[7rem] md:right-36 md:top-24" />
+        class="z-[2] w-76 absolute right-0 bottom-[7rem] md:right-36 md:top-24" />
     </div>
     <!-- end of bg-designs -->
   </section>
@@ -162,16 +162,16 @@
 
   <!-- meet me section-->
   <section id="meet-me" class="bg-white my-10 mx-4 py-6 overflow-x-hidden">
-    <div class="container mx-auto mt-4 px-6 -mb-10" data-aos="fade-right  ">
+    <div class="container mx-auto mt-4 px-6 -mb-[150px] md:-mb-10" data-aos="fade-right  ">
       <!-- section heading -->
       <h2 class="secondary-title">Meet Me</h2>
       <p class="secondary-paragraph">My Skills and Who I am</p>
     </div>
 
-    <div class="container flex flex-col items-center mx-auto md:flex-row scrollbar-hide overflow-x-hidden">
+    <div class="container flex flex-col items-center mx-auto md:flex-row scrollbar-hide overflow-hidden">
       <!-- my skills -->
-      <div id="skills" class="md:w-1/2 pb-3 md:pb-0 scrollbar-hide">
-        <div class="orbit">
+      <div id="skills" class="md:w-1/2 md:pb-0 scrollbar-hide overflow-hidden">
+        <div class="orbit scrollbar-hide">
           <div class="center-image">
             <img src="./img/skills/Myself1.svg" alt="" />
           </div>
@@ -243,8 +243,8 @@
       </div>
 
       <!-- about me -->
-      <div class="flex flex-col md:flex-row item-center md:w-1/2">
-        <div class="px-6 py-6 md:px-0 md:py-0 scrollbar-hide" data-aos="fade-up">
+      <div class="flex flex-col md:flex-row item-center md:w-1/2 -mt-[110px] md:mt-0">
+        <div class="px-6 pb-6 md:px-0 md:py-0 scrollbar-hide" data-aos="fade-up">
           <h4 class="text-firstColor">
             Hey There 👋 I am
           </h4>
@@ -428,14 +428,14 @@
 
           <div class="w-full lg:w-1/2 px-3">
             <div class="flex lg:justify-end">
-              <a href="#project">
+              <a href="https://wa.me/%2B2347036877727" target="_blank">
                 <button
                   class="md:flex px-3 py-2 mr-2 md:mr-3 md:py-4 md:px-6 rounded-md text-firstColor bg-white hover:bg-firstColor hover:text-white border transition duration-500 ease-in-out">
                   <i class="hidden md:block mr-[2px] uil uil-mobile-android"></i>
                   Let’s talk
                 </button>
               </a>
-              <a href="/pdf/_Oluwabamise_olatunji_cv.pdf">
+              <a href="https://wa.me/%2B2347036877727" target="_blank">
                 <button
                   class="md:flex px-3 py-2 md:py-4 md:px-6 rounded-md text-white bg-firstColor hover:bg-white hover:text-firstColor border transition duration-500 ease-in-out">
                   <i class="hidden md:block mr-[2px] uil uil-file-edit-alt"></i>
@@ -711,7 +711,7 @@
         </div>
 
         <div class="w-full md:w-1/2 drop-shadow-2xl">
-          <div class="bg-white relative rounded-lg p-8 sm:p-12">
+          <div class="bg-white relative rounded-lg p-8 sm:p-12" id="hire">
             <form action="POST" data-netlify="true">
               <div class="mb-6">
                 <input id="name" name="name" type="text" placeholder="Your Full Name" minlength="4" maxlength="80"
