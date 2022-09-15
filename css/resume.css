@@ -5,6 +5,23 @@ body {
 	overflow-x: hidden!important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+p,
+a,
+i,
+button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
+
 .section-headline {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;

@@ -657,8 +657,24 @@ video {
   z-index: -1;
 }
 
+.z-0{
+  z-index: 0;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.z-30{
+  z-index: 30;
+}
+
 .m-2{
   margin: 0.5rem;
+}
+
+.m-12{
+  margin: 3rem;
 }
 
 .mx-auto{
@@ -706,6 +722,16 @@ video {
   margin-right: 3rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-12{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mr-\[1px\]{
   margin-right: 1px;
 }
@@ -732,6 +758,10 @@ video {
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.-mb-14{
+  margin-bottom: -3.5rem;
 }
 
 .mb-1{
@@ -822,8 +852,24 @@ video {
   margin-top: 3rem;
 }
 
-.-mb-14{
-  margin-bottom: -3.5rem;
+.-mb-4{
+  margin-bottom: -1rem;
+}
+
+.-mb-10{
+  margin-bottom: -2.5rem;
+}
+
+.mb-\[5px\]{
+  margin-bottom: 5px;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .block{
@@ -1116,9 +1162,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-green-300{
-  --tw-gradient-to: rgb(134 239 172 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), #86efac, var(--tw-gradient-to);
+.via-\[\#3f63db\]{
+  --tw-gradient-to: rgb(63 99 219 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #3f63db, var(--tw-gradient-to);
 }
 
 .to-white{
@@ -1247,6 +1293,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pb-3{
+  padding-bottom: 0.75rem;
+}
+
 .pb-\[180px\]{
   padding-bottom: 180px;
 }
@@ -1257,10 +1307,6 @@ video {
 
 .pb-1{
   padding-bottom: 0.25rem;
-}
-
-.pb-3{
-  padding-bottom: 0.75rem;
 }
 
 .text-center{
@@ -1397,6 +1443,11 @@ video {
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-\[\#3f63db\]{
+  --tw-text-opacity: 1;
+  color: rgb(63 99 219 / var(--tw-text-opacity));
 }
 
 .antialiased{
@@ -1764,6 +1815,11 @@ section > .social-media {
 .hover\:bg-blue-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#3f63db\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 99 219 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-90:hover{
