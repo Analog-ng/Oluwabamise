@@ -1830,6 +1830,11 @@ section > .social-media {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.focus\:border-firstColor:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(63 99 219 / var(--tw-border-opacity));
+}
+
 .focus\:bg-green-700:focus{
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
