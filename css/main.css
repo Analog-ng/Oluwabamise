@@ -665,8 +665,16 @@ video {
   z-index: -1;
 }
 
-.z-\[100\]{
-  z-index: 100;
+.z-\[\]{
+  z-index: ;
+}
+
+.z-\[250\]{
+  z-index: 250;
+}
+
+.z-\[150\]{
+  z-index: 150;
 }
 
 .mx-auto{
@@ -1954,6 +1962,10 @@ section > .social-media {
 
   .md\:top-24{
     top: 6rem;
+  }
+
+  .md\:top-20{
+    top: 5rem;
   }
 
   .md\:mt-3{
