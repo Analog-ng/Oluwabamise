@@ -20,6 +20,8 @@
   <meta name="twitter:description"
     content="Oluwabamise Olatunji is a Frontend Developer and JavaScript Enthusiast based in Lagos, Nigeria focused on crafting responsive and interactive web applications" />
   <meta name="twitter:image" content="https://raw.githubusercontent.com/Analog-ng/Analog-ng/main/myself.png" />
+  <meta property="twitter:url" content="https://tunjibamise.tech" />
+  <meta property="twitter:type" content="website" />
 
   <!-- description -->
   <meta property="og:title" content="Oluwabamise Olatunji | Front End Web Developer" />
@@ -42,7 +44,7 @@
 
   <!-- icon scout cdn -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
 
   <!-- aos -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -705,7 +707,7 @@
                 <h4 class="font-bold text-gray-200 text-xl mb-1">
                   Email Address
                 </h4>
-                <p class="text-base text-white">info@tunjibamise.tech</p>
+                <p class="text-base text-white">contact@tunjibamise.tech</p>
               </div>
             </div>
           </div>
@@ -713,7 +715,12 @@
 
         <div class="w-full md:w-1/2 drop-shadow-2xl">
           <div class="bg-white relative rounded-lg p-8 sm:p-12" id="hire">
-            <form action="POST" data-netlify="true">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" action="/thankyou/">
+               <p class="hidden">
+                 <label>
+                   Don’t fill this out if you’re human: <input name="bot-field" />
+                 </label>
+               </p>
               <div class="mb-6">
                 <input id="name" name="name" type="text" placeholder="Your Full Name" minlength="4" maxlength="80"
                   required
@@ -730,11 +737,6 @@
               <div class="mb-6">
                 <textarea rows="5" name="message" placeholder="Your Message" required id="message"
                   class="w-full rounded py-3 px-[14px] text-darkColor text-base border border-[f0f0f0] resize-none outline-none focus-visible:shadow-none focus:border-firstColor "></textarea>
-              </div>
-              <div class="mb-6">
-                <div data-netlify-recaptcha="true"
-                  class="w-full rounded">
-                </div>
               </div>
               <div>
                 <input id="send" name="submit" type="submit" value="Send Message"
@@ -753,21 +755,21 @@
     <a href="https://api.whatsapp.com/send?phone=+2347036877727" target="_blank"
       class="transition duration-500 ease-in-out">
       <button
-        class="inline-flex items-center justify-center bg-green-600 text-white font-medium uppercase rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 left-3"
+        class="inline-flex items-center justify-center bg-green-600 text-white font-medium uppercase rounded-full shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out bottom-10 left-5"
         id="whatsapp-icon">
         <i class="uil uil-whatsapp text-2xl"></i>
       </button>
     </a>
-    <div class="fixed bottom-14 left-11 -mr-1 w-3 h-3 rounded-full bg-red-600 z-[250] transition duration-150 ease-in-out">
+    <div class="fixed bottom-20 left-14 -mr-1 w-3 h-3 rounded-full bg-red-600 z-[250] transition duration-150 ease-in-out">
     </div>
     <div
-      class="fixed bottom-14 left-11 -mr-1 w-3 h-3 rounded-full bg-red-600 z-[150] animate-ping transition duration-150 ease-in-out">
+      class="fixed bottom-20 left-14 -mr-1 w-3 h-3 rounded-full bg-red-600 z-[150] animate-ping transition duration-150 ease-in-out">
     </div>
   </div>
 
   <!-- Back to top button -->
   <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
-    class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-3"
+    class="inline-block p-3 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out bottom-10 right-5"
     id="btn-back-to-top">
     <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img"
       xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
